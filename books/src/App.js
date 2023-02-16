@@ -1,6 +1,7 @@
 
 import {useState} from 'react'
 import BookCreate from './Component/BookCreate'
+import BookList from './Component/BookList'
 
 function App() {
 
@@ -12,8 +13,9 @@ function App() {
     setBooks(updatedBooks);
   }
 
-  return (<div>  
+  return (<div className='app'>  
     <BookCreate onCreate={createBook}/>
+    <BookList books={books} />
      </div>
   )
 }
