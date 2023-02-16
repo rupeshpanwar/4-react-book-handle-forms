@@ -14,10 +14,14 @@ const [title, setTitle] = useState("");
         };  
 
     return (
-        <form onSubmit={handleSubmit}>
-        <input value={title} onChange={handleChange} />
-        <button type="submit">Create Book</button>
-      </form>
+        <div className="book-create">
+            <h3>Add a Book</h3>
+                <form  onSubmit={handleSubmit}>
+                <label>Title</label>
+                <input className="input" value={title} onChange={handleChange} />
+                <button className="button" type="submit">Create Book</button>
+                 </form>
+      </div>
     );
   }
   
