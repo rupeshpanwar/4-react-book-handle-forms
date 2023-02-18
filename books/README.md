@@ -79,4 +79,4 @@ https://picsum.photos/
 # JSON Server setup
 npm i json-server
 
-
+"server" : "json-server --port 3001 --watch db.json --host 127.0.0.1"
