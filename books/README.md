@@ -80,3 +80,12 @@ https://picsum.photos/
 npm i json-server
 
 "server" : "json-server --port 3001 --watch db.json --host 127.0.0.1"
+
+
+# install rest client to test api
+
+rest client (via extension in vs code)
+
+# install Axios to connect to db.json api
+
+npm i axios

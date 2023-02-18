@@ -2,6 +2,7 @@
 import {useState} from 'react'
 import BookCreate from './Component/BookCreate'
 import BookList from './Component/BookList'
+import axios from 'axios'
 
 function App() {
 
@@ -23,11 +24,13 @@ function App() {
     setBooks(updatedBooks);
   };
 
-  const createBook = (title) => {
-    const updatedBooks = [...books,
-       { id: books.length + 1, title }]
+  const createBook = async (title) => {
+  const response= await axios
+    .post("http://localhost:3001/books", { title })
+
+    const updatedBooks = [...books, response.data];
     setBooks(updatedBooks);
-  }
+    }
 
   return (<div className='app'>  
     <h1>Reading List</h1>
