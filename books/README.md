@@ -76,5 +76,7 @@ https://state-updates.vercel.app/
 # Pic random pics
 https://picsum.photos/
 
+# JSON Server setup
+npm i json-server
 
 
